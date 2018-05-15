@@ -1,1 +1,1 @@
-### Для uchi.ru
+https://diligens.github.io/kids_math
