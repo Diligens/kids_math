@@ -1,0 +1,11 @@
+{
+    "title": "uchi.ru_test",
+    "name": "uchi.ru_test",
+    "version": "1.0.0",
+    "description": "uchi.ru_test",
+    "license": "MIT",
+    "devDependencies": {
+        "browser-sync": "2.23.6",
+        "gulp": "^3.9.1"
+    }
+}

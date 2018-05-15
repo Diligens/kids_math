@@ -1,0 +1,108 @@
+.container {
+    margin: 0 auto;
+    width: 720px;
+    position: relative;
+    font-family: Calibri;
+}
+.ruler {
+    margin: 0 auto;
+    position: relative;
+    height: 67px;
+    width: 700px;
+    background-image: url("../assets/sprite.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.ruler:after {
+    content: '';
+    background-image: url(https://assets.uchi.ru/assets/matwey/dino-registration-64a1119cb377c3d9075dc727a1e19a30.svg);
+    height: 60px;
+    width: 57px;
+    position: absolute;
+    right: 50px;
+    top: 0;
+    transition: .5s;
+    z-index: -1;
+}
+.ruler.win:after {
+    transform: translateY(-54px);
+}
+.example {
+    font-size: 40px;
+    margin-bottom: 130px;
+    padding-top: 30px;
+    text-align: center;
+
+}
+.example_box {
+    display: flex;
+    justify-content: center;
+}
+.example div {
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 3px;
+}
+.scale {
+    width: 89%;
+    height: 20px;
+    position: absolute;
+    left: 4%;
+}
+input:focus {
+    outline: none;
+}
+input {
+    box-sizing: border-box;
+    padding: 1px;
+    background-color: #fff;
+    width: 30px;
+    height: 40px;
+    border: none;
+}
+.scale .input {
+    position: absolute;
+    border: 2px solid rgba(86, 85, 79, 0.62);
+    border-radius: 6px;
+    top: -100px;
+    margin-left: -15px;
+    font-size: 30px;
+    text-align: center;
+}
+.example_sum.focused {
+    border: 2px solid rgba(86, 85, 79, 0.62);
+    border-radius: 6px;
+}
+.input_sum {
+    font-size: 40px;
+    top: 6px;
+    color: #000;
+}
+.arrow {
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 20px;
+    height: 50px;
+    border-radius: 300px 300px 0 0;
+    border-top: 4px solid #ff94e7;
+    border-left: 4px solid #ff94e7;
+    border-right: 4px solid #ff94e7;
+}
+.arrow_end {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-right: 4px solid #ff94e7;
+    border-bottom: 4px solid #ff94e7;
+    right: -7px;
+    bottom: -3px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    transform: rotate(35deg);
+}
+.example_error {
+    background-color: #ffb000;
+}
+.input_error {
+    color: red;
+}
